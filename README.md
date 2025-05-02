@@ -47,6 +47,45 @@ To generate:
 ```
 javadoc -d docs/ -sourcepath src/ main/StaffAssignmentController.java
 ```
+
+## 🛠️ Setup Requirements
+
+Before running the project, make sure to set up the required environment and libraries:
+
+### ✅ Java SDK
+- Java SE Development Kit (JDK) 17 or later
+- [Download JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
+
+### ✅ Required Libraries
+The project uses the following external libraries:
+
+1. **JavaFX SDK** (for UI)
+   - javafx.controls
+   - javafx.fxml
+   - javafx.graphics
+   - javafx.base
+   - [JavaFX Download](https://gluonhq.com/products/javafx/)
+
+2. **H2 Database Engine**
+   - For local data persistence and embedded database usage
+   - [H2 Download](https://www.h2database.com/)
+
+3. **JUnit 5**
+   - For running unit tests
+   - org.junit.jupiter.api
+   - [JUnit 5 Guide](https://junit.org/junit5/)
+
+### 📦 How to Add Libraries (Example - IntelliJ IDEA)
+1. Open Project Structure (File → Project Structure → Modules → Dependencies)
+2. Click "+" → JARs or directories → Add `javafx-sdk/lib` and `h2.jar`
+3. Apply changes
+
+Make sure VM options include JavaFX modules, e.g.:
+```
+--module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml
+```
+
+
 Demonstration of the program:
 **Demonstration** – [Youtube](https://www.youtube.com/watch?v=jgpKUSDOCPY)
 Author
